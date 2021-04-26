@@ -16,9 +16,18 @@
         id="name"
         placeholder="enter a character name"
       />
-      <button id="search">search</button>
-      <button id="check-align">Check character</button>
+
+      <select id="filter">
+        <option value="">Select Status</option>
+        <option value="good characters">Good</option>
+        <option value="bad characters">Bad</option>
+        <option value="neutral characters">Natural</option>
+      </select>
+      <button type="submit">search</button>
     </form>
+
+    <h3 style="display: none">total result : <span id="totalResult"></span></h3>
+    <div id="result"></div>
   </body>
   <script src="script/script.js"></script>
 </html>
